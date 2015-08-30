@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<info>
+	<id>supersecureenterpriseapp</id>
+	<name>Super Secure Enterprise App</name>
+	<description>The super secure enterprise app is an intentionally insecure enterprise application. Do not deploy this to any live instance.</description>
+	<licence>AGPL</licence>
+	<author>Lukas Reschke</author>
+	<version>0.0.1</version>
+	<default_enable />
+	<dependencies>
+		<owncloud min-version="8.1" />
+		<owncloud max-version="8.2" />
+	</dependencies>
+</info>
