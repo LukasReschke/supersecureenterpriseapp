@@ -101,7 +101,7 @@ class OrderController extends Controller {
 		}
 		$this->db->executeQuery('DELETE FROM *PREFIX*favourite_product where `userid` = "'.\OC_User::getUser().'"');
 		$this->db->executeQuery('INSERT INTO *PREFIX*favourite_product(`productname`, `userid`) VALUES("'.$name.'", "'.$this->userId.'");');
-		header('Location: ' . $_SERVER['HTTP_REFERER']);
+		header("Location: ".\OC::$server->getURLGenerator()->linkToRoute('supersecureenterpriseapp_index'));
 		exit();
 	}
 
